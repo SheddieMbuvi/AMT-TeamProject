@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login and Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="loginToggle">Log In</button>
+                <button id="signupToggle">Sign Up</button>
+            </div>
+            <form id="loginForm" class="form">
+                <input type="text" placeholder="Username" id="loginUsername" required>
+                <input type="password" placeholder="Password" id="loginPassword" required>
+                <button type="submit">Log In</button>
+                <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+            </form>
+            <form id="signupForm" class="form">
+                <input type="text" placeholder="Username" id="signupUsername" required>
+                <input type="email" placeholder="Email" id="signupEmail" required>
+                <input type="password" placeholder="Password" id="signupPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Forgot Password</h2>
+            <p>Enter your email to reset your password:</p>
+            <input type="email" placeholder="Email" id="resetEmail" required>
+            <button id="resetPasswordBtn">Reset Password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
